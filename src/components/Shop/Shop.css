@@ -1,0 +1,33 @@
+.shop-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 45px;
+    padding: 70px;
+}
+.cart-container{
+    background: #ffe0b3;
+}
+@media only screen and (max-width:1400px) {
+    .product-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 45px;
+        padding: 45px;
+    }
+}
+@media only screen and (max-width:1140px) {
+    .shop-container {
+        display: grid;
+        grid-template-columns: 4fr 2fr;
+    }
+    .product-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 45px;
+        padding: 35px;
+    }
+}
